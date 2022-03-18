@@ -107,9 +107,9 @@ namespace Playnite.FullscreenApp.ViewModels
 
             gameDetails.Game.GameActions?.Where(a => !a.IsPlayAction).ForEach(a => items.Add(new GameActionItem(ActivateActionCommand, a, a.Name, "GameMenuCustomActionButtonTemplate")));
 
-            items.Add(new GameActionItem(ToggleFavoritesCommand, GameDetails.Game.Favorite ? ResourceProvider.GetString(LOC.RemoveFavoriteGame) : ResourceProvider.GetString(LOC.FavoriteGame), "GameMenuFavoriesButtonTemplate"));
-            items.Add(new GameActionItem(ToggleVisibilityCommand, GameDetails.Game.Hidden ? ResourceProvider.GetString(LOC.UnHideGame) : ResourceProvider.GetString(LOC.HideGame), "GameMenuVisibilityButtonTemplate"));
-            items.Add(new GameActionItem(RemoveGameCommand, ResourceProvider.GetString(LOC.RemoveGame), "GameMenuRemoveButtonTemplate"));
+            // items.Add(new GameActionItem(ToggleFavoritesCommand, GameDetails.Game.Favorite ? ResourceProvider.GetString(LOC.RemoveFavoriteGame) : ResourceProvider.GetString(LOC.FavoriteGame), "GameMenuFavoriesButtonTemplate"));
+            // items.Add(new GameActionItem(ToggleVisibilityCommand, GameDetails.Game.Hidden ? ResourceProvider.GetString(LOC.UnHideGame) : ResourceProvider.GetString(LOC.HideGame), "GameMenuVisibilityButtonTemplate"));
+            // items.Add(new GameActionItem(RemoveGameCommand, ResourceProvider.GetString(LOC.RemoveGame), "GameMenuRemoveButtonTemplate"));
 
             if (!GameDetails.Game.IsCustomGame && GameDetails.Game.IsInstalled)
             {
